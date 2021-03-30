@@ -3,7 +3,7 @@ const generatorColor = (): void => {
     let green: number = Math.random() * 255;
     let blue: number = Math.random() * 255;
 
-    displayOutputHTML(red, green ,blue);
+    displayOutputHTML(red, green, blue);
 }
 
 const displayOutputHTML = (red: number, green: number, blue: number): void => {
