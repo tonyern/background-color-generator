@@ -1,12 +1,12 @@
 const generatorColor = (): void => {
-    let red: number = getRandomNumber();
-    let green: number = getRandomNumber();
-    let blue: number = getRandomNumber();
+    let red: number = Math.random() * 255;
+    let green: number = Math.random() * 255;
+    let blue: number = Math.random() * 255;
 
-    document.body.style.background = `rgba(${red}, ${green}, ${blue})`;
-    document.getElementById("display-color").innerHTML = `rgba(${red}, ${green}, ${blue})`;
+    displayOutputHTML(red, green ,blue);
 }
 
-const getRandomNumber = (): number => {
-    return Math.random() * 255;
+const displayOutputHTML = (red: number, green: number, blue: number): void => {
+    document.body.style.background = `rgba(${red}, ${green}, ${blue})`;
+    document.getElementById("display-color").innerHTML = `rgba(${red}, ${green}, ${blue})`;
 }
